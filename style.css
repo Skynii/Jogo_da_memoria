@@ -1,0 +1,47 @@
+root:{
+   --dark-blue: #15133C;
+   --gold: #e8a43d;
+   --pink: #f798d0;
+   --purple: #8a52b5;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   
+
+   background: #15133c;
+}
+
+main {
+   width: 80%;
+   box-sizing: border-box;
+   background-color: #8a52b5;
+   justify-content: center;
+
+   margin: 0 auto;
+
+   
+}
+
+.titulo h1{
+   color:#e8a43d;
+   text-align: center;
+
+}
+
+p{
+   text-align: center;
+   font-size: 1.3rem;
+   padding-bottom: 1rem;
+}
+
+.jogo{
+   width: 80%;
+   box-sizing: border-box;
+}
+
+.cartas img{
+   background-color: #e8a43d;
+   width: 2rem;
+}
