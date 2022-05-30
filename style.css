@@ -5,19 +5,21 @@ root:{
    --purple: #8a52b5;
 }
 
-body{
+*{
    margin: 0;
    padding: 0;
-   
+   box-sizing: border-box;
+}
+
+body{
+   height: 100vh;   
 
    background: #15133c;
 }
 
 main {
    width: 80%;
-   box-sizing: border-box;
    background-color: #8a52b5;
-   justify-content: center;
 
    margin: 0 auto;
 
@@ -37,11 +39,30 @@ p{
 }
 
 .jogo{
-   width: 80%;
-   box-sizing: border-box;
+   
+   
+   display: flex;
+   flex-direction: row;
+   background: #e8a43d;
+   width: 70%;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   padding:2px;
+   justify-content: space-between;
+   
+}
+
+.cartas {
+   
+   background-color: #e8a43d;
+   width: calc(20% - 10px); /*!para posicionar as cartas*/
+   height: calc(33.333% - 10px);/*!para posicionar as cartas*/
+   margin:10px 10px 0 10px;
+   position: relative;
+   
 }
 
 .cartas img{
-   background-color: #e8a43d;
-   width: 2rem;
+   width: 100%;
+   height: auto;
 }
