@@ -1,4 +1,4 @@
-root:{
+:root{
    --dark-blue: #15133C;
    --gold: #e8a43d;
    --pink: #f798d0;
@@ -44,26 +44,38 @@ p{
    
    display: flex;
    flex-direction: row;
-   background: #e8a43d;
-   width: 70%;
+   
+   width: 100%;
    flex-wrap: wrap;
    margin: 0 auto;
-   padding:2px;
+   padding:2px 20px;
    justify-content: space-between;
    
 }
 
-.cartas {
+.cartas{
    
-   background-color: #e8a43d;
-   width: calc(20% - 10px); /*!para posicionar as cartas*/
-   height: calc(33.333% - 10px);/*!para posicionar as cartas*/
+   
+   width: 100px;  /*?para posicionar as cartas*/
+   height: calc(33.333% - 10px); /*?para posicionar as cartas*/
    margin:10px 10px 0 10px;
-   position: relative;
+   position: relative; /*?para fazer marcação da posição*/
+   padding: 5px;
    
 }
 
-.cartas img{
+.carta-atras{
+   position: absolute; /*! agrupa das cartas*/
    width: 100%;
-   height: auto;
+   height:100%;
+   border-radius: 5px;
+   z-index: 1; /*? move para frente*/
+   top:0;
+   left: 0;
+   
+}
+
+.carta-frente {
+   width: 100%;
+   
 }
