@@ -22,6 +22,7 @@ Entrega alterda para dia : 03/05/2022
 To-do List:
 
 - [x] Trocar cartas por grid.
+- [x] Flip das cartas.
 - [] Fundo Animado com estrelas.
 - [] Jogabilidade: Cartas escolhidas viram, se forem iguais permanecem viradas.
 - [] Botão de resetar.
