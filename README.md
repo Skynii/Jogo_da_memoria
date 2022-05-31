@@ -17,3 +17,8 @@ Criar um jogo de mémoria em que a jogabilidade seja feita pela linguagem de Jav
 Inicio: 29/05/2022 
 Fim: 04/05/2022
 
+To-do List:
+
+- [] Fundo Animado com estrelas.
+- [] Jogabilidade: Cartas escolhidas viram, se forem iguais permanecem viradas.
+- [] Botão de resetar.
