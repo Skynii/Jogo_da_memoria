@@ -12,20 +12,21 @@
    box-sizing: border-box;
    }
 
-   body {
+body {
    height: 100vh;
 
    background: #15133c;
    }
 
-   main {
+main {
    width: 80%;
    background-color: #8a52b5;
 
    margin: 0 auto;
+   
    }
 
-   .titulo h1 {
+.titulo h1 {
    color: #e8a43d;
 text-align: center;
 }
@@ -38,24 +39,33 @@ p {
 
 .jogo {
    display: grid;
-   grid-template-columns: auto auto auto auto;
+   grid-template-columns: repeat(6, auto);
+   place-content: center;
+   
+   
 
-   margin: 0 auto;
+   
+   
 
-   width: 100%;
 }
 
-.cartas {
-   width: 50%;
-   height: calc(33.333% - 10px);
+.cartas { 
+   
    position: relative;
    padding: 5px;
-   margin: 2rem auto;
+   margin: 0 auto;
+   background-color: #cc9c00;
+
+   
+   
+   
+   
+   
+   
 
 /*? flip das cartas*/
    transform-style: preserve-3d;
-   perspective: 600px;
-   transition: 0.5s;
+   transition: 0.8s;
 }
 
 /*? flip das cartas*/
@@ -69,19 +79,27 @@ p {
 }
 .carta-atras {
    position: absolute; /*! agrupa das cartas*/
-   width: 100%;
+   
    border-radius: 5px;
    top: 0;
    left: 0;
+   
    backface-visibility: hidden;
    /*? flip das cartas*/
    transform: rotateY(0deg);
    transition: 0.5s;
+   border-radius: 5px;
+   
 }
 
+
+
 .carta-frente {
-  width: 100%;
+  
   backface-visibility: hidden;
   transform: rotateY(180deg);
   transition: 0.5s;
+  border-radius: 5px;
+ 
+  
 }

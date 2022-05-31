@@ -25,4 +25,6 @@ To-do List:
 - [x] Flip das cartas.
 - [] Fundo Animado com estrelas.
 - [] Jogabilidade: Cartas escolhidas viram, se forem iguais permanecem viradas.
+- [] Cartas precisam se embaralhar ao inciar e ao resetar.
 - [] Botão de resetar.
+[] Responsividade das imagens. Diminuir cartas ao diminuir tela.
