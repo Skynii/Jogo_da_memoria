@@ -27,4 +27,6 @@ To-do List:
 - [] Jogabilidade: Cartas escolhidas viram, se forem iguais permanecem viradas.
 - [] Cartas precisam se embaralhar ao inciar e ao resetar.
 - [] Botão de resetar.
-[] Responsividade das imagens. Diminuir cartas ao diminuir tela.
+- [] Responsividade das imagens: Diminuir cartas ao diminuir tela.
+- [] Colocar icone na aba do navegador.
+- [] Cursor do mouse como varinha.
