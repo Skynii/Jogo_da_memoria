@@ -41,12 +41,6 @@ p {
    display: grid;
    grid-template-columns: repeat(6, auto);
    place-content: center;
-   
-   
-
-   
-   
-
 }
 
 .cartas { 
@@ -55,23 +49,19 @@ p {
    padding: 5px;
    margin: 0 auto;
    background-color: #cc9c00;
-
-   
-   
-   
-   
-   
-   
-
 /*? flip das cartas*/
    transform-style: preserve-3d;
    transition: 0.8s;
+   
 }
 
 /*? flip das cartas*/
 .cartas:active,
 .carta-atras {
    transform: rotate(-180deg);
+   transform: scale(0.97);
+   transition: 
+   0.5s;
 }
 /*? flip das cartas*/
 .cartas:active {
@@ -102,4 +92,8 @@ p {
   border-radius: 5px;
  
   
+}
+
+.cartas .flip{
+   transform:rotateY(180deg);
 }

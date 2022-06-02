@@ -1,11 +1,22 @@
-//? Virar a carta
+/*Duas cartas virando*/
 
-const carta = document.querySellectorALl('.cartas')
+const cards = document.querySelectorAll('cartas');
 
-//*Adicionar uma classe em todas as .cartas
 
-function virarCarta(){
-   this.classList.toggle('virar');
+let hasFlippedCard = false;
+let firstCard, secondCard;
+
+function flipCard(){
+   this.classList.add('flip');
+
+   if(!hasFlippedCard) {
+      hasFlippedCard = true;
+      firstCard = this;
+      return;
+   }
+
+   secondCard = this;
+   hasFlippedCard = false; 
 }
 
-carta.forEach(cartas => cartas.addEventListener('click', virarCarta)); //? adiciona um evento clicar nas cartas.
+cards.forEach(card => card.addEventListener('click', flipCard))
