@@ -1,22 +1,24 @@
-/*Duas cartas virando*/
+const cartas = document.querySelectorAll('.cartas');
 
-const cards = document.querySelectorAll('cartas');
+let cartaVirou = false;
+let primeiraCarta, segundaCarta;
 
+function flipCard() {
+  this.classList.add('flip'); //Virou a carta e travou ela de frente, adicionando uma nova classe;
 
-let hasFlippedCard = false;
-let firstCard, secondCard;
+  if(!cartaVirou){
+     //primeira carta escolhida;
+     cartaVirou = true;
+     primeiraCarta = this;
+  }else{
+     //segunda carta
+     cartaVirou = false;
+     segundaCarta = this;
 
-function flipCard(){
-   this.classList.add('flip');
-
-   if(!hasFlippedCard) {
-      hasFlippedCard = true;
-      firstCard = this;
-      return;
-   }
-
-   secondCard = this;
-   hasFlippedCard = false; 
+     console.log(primeiraCarta.dataset.personagem);
+     console.log(segundaCarta.dataset.personagem);
+  }
 }
 
-cards.forEach(card => card.addEventListener('click', flipCard))
+cartas.forEach(card => card.addEventListener('click', flipCard)); 
+

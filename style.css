@@ -55,27 +55,29 @@ p {
    
 }
 
+
 /*? flip das cartas*/
-.cartas:active,
+/*.cartas:active,
 .carta-atras {
    transform: rotate(-180deg);
    transform: scale(0.97);
    transition: 
    0.5s;
-}
+}*/
 /*? flip das cartas*/
 .cartas:active {
-   transform: rotateY(180deg);
+   transform: scale(0.97);
+   transition: transform 0.5s;
 }
+
+
 .carta-atras {
-   position: absolute; /*! agrupa das cartas*/
-   
+   position: absolute;   
    border-radius: 5px;
    top: 0;
    left: 0;
    
    backface-visibility: hidden;
-   /*? flip das cartas*/
    transform: rotateY(0deg);
    transition: 0.5s;
    border-radius: 5px;
@@ -87,13 +89,13 @@ p {
 .carta-frente {
   
   backface-visibility: hidden;
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
   transition: 0.5s;
   border-radius: 5px;
  
   
 }
 
-.cartas .flip{
+.cartas.flip{
    transform:rotateY(180deg);
 }
