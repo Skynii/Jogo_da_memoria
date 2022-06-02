@@ -8,16 +8,32 @@ function flipCard() {
 
   if(!cartaVirou){
      //primeira carta escolhida;
-     cartaVirou = true;
-     primeiraCarta = this;
-  }else{
-     //segunda carta
-     cartaVirou = false;
-     segundaCarta = this;
-
-     console.log(primeiraCarta.dataset.personagem);
-     console.log(segundaCarta.dataset.personagem);
+      cartaVirou = true;
+      primeiraCarta = this;
+      return;
   }
+     //segunda carta
+      cartaVirou = false;
+      segundaCarta = this;
+
+      checarMatch();
+}
+function checarMatch(){
+   let eIgual= primeiraCarta.dataset.personagem === segundaCarta.dataset.personagem;
+
+   eIgual ? cartasDesabilitadas() : desvirarCartas();
+}
+
+function cartasDesabilitadas(){
+   primeiraCarta.removeEventListener('click', flipCard);
+   segundaCarta.removeEventListener('click', flipCard);
+}
+
+function desvirarCartas(){
+   setTimeout(() => {
+      primeiraCarta.classList.remove('flip');
+      segundaCarta.classList.remove('flip');
+   }, 800)
 }
 
 cartas.forEach(card => card.addEventListener('click', flipCard)); 

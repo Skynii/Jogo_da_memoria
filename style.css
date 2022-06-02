@@ -99,3 +99,7 @@ p {
 .cartas.flip{
    transform:rotateY(180deg);
 }
+
+.cartas.limpar{
+   display:none;
+}
