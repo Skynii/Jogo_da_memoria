@@ -24,7 +24,7 @@ To-do List:
 - [x] Trocar cartas por grid.
 - [x] Flip das cartas.
 - [] Fundo Animado com estrelas.
-- [] Jogabilidade: Cartas escolhidas viram, se forem iguais permanecem viradas.
+- [] Jogabilidade: Cartas escolhidas viram, se forem iguais permanecem são limpas do jogo.
 - [] Cartas precisam se embaralhar ao inciar e ao resetar.
 - [] Botão de resetar.
 - [] Responsividade das imagens: Diminuir cartas ao diminuir tela.
