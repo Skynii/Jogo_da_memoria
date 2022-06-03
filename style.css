@@ -4,6 +4,7 @@
   --pink: #f798d0;
   --purple: #8a52b5;
   --old-gold: #cc9c00;
+  --courgette:  'Courgette', cursive;
 }
 
 * {
@@ -15,32 +16,42 @@
 body {
    height: 100vh;
 
-   background: #15133c;
+   background: rgb(21,19,60);
+   background: linear-gradient(0deg, rgba(21,19,60,1) 0%, rgba(28,26,84,1) 40%, rgba(118,23,190,1) 100%);
    }
 
 main {
-   width: 80%;
-   background-color: #8a52b5;
-
-   margin: 0 auto;
+   width: 70%;
+   height: auto;
+   background-color: var(--purple);
+   border-radius: 20px;
+   margin: 5% auto;
    
    }
 
 .titulo h1 {
-   color: #e8a43d;
+   color: var(--gold);
 text-align: center;
+font-size: 3rem;
+font-family:var(--courgette);
+text-shadow: 3px 1px 2px var(--dark-blue) ;
+
 }
 
 p {
+   margin-top:1rem;
    text-align: center;
-   font-size: 1.3rem;
+   font-size: 1.8rem;
    padding-bottom: 1rem;
+   font-family: 'Manjari', sans-serif;
 }
 
 .jogo {
    display: grid;
    grid-template-columns: repeat(6, auto);
    place-content: center;
+   gap:1rem;
+   
 }
 
 .cartas { 
@@ -48,22 +59,13 @@ p {
    position: relative;
    padding: 5px;
    margin: 0 auto;
-   background-color: #cc9c00;
+   
 /*? flip das cartas*/
    transform-style: preserve-3d;
    transition: 0.8s;
    
 }
 
-
-/*? flip das cartas*/
-/*.cartas:active,
-.carta-atras {
-   transform: rotate(-180deg);
-   transform: scale(0.97);
-   transition: 
-   0.5s;
-}*/
 /*? flip das cartas*/
 .cartas:active {
    transform: scale(0.97);
@@ -84,14 +86,12 @@ p {
    
 }
 
-
-
 .carta-frente {
   
-  backface-visibility: hidden;
-  transform: rotateY(-180deg);
-  transition: 0.5s;
-  border-radius: 5px;
+   backface-visibility: hidden;
+   transform: rotateY(-180deg);
+   transition: 0.5s;
+   border-radius: 5px;
  
   
 }

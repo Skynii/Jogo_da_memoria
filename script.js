@@ -1,8 +1,10 @@
 const cartas = document.querySelectorAll('.cartas');
+const btn = document.querySelectorAll('btn-reiniciar')
 
 let cartaVirou = false;
 let bloquearCarta = false;
 let primeiraCarta, segundaCarta;
+
 
 
 function flipCard() {
@@ -61,5 +63,9 @@ function resetarClique(){
       card.style.order = misturar;
    });
 })();
+
+
+
+
 cartas.forEach(card => card.addEventListener('click', flipCard)); 
 
