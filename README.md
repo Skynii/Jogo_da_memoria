@@ -30,10 +30,11 @@ https://precious-jelly-1e28de.netlify.app/
 - [x] Flip das cartas.
 - [x] Jogabilidade: Cartas escolhidas viram, se forem iguais se  permanecem com personagem para frente.
 - [x] Cartas precisam se embaralhar ao iniciar
-- [x] Botão de resetar, reembaralhando todas as cartas
+
 
 #### Oportunidades de melhoria: 
 
+- [] Botão de resetar, reembaralhando todas as cartas
 - [] Responsividade das imagens: Diminuir cartas ao diminuir tela.
 - [] Colocar icone na aba do navegador.
 - [] Cursor do mouse como varinha.
